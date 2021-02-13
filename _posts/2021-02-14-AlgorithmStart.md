@@ -1,9 +1,12 @@
 ---
-title : "이것이 코딩 테스트다 with 파이썬 풀이"
+title : "이것이 코딩 테스트다 with 파이썬 풀이 - Greedy"
+excerpt: "Greedy 알고리즘"
 category :
     - Algorithm
 tag :
+    - Greedy
     - Algorithm
+    - Python
 toc : true
 
 ---
