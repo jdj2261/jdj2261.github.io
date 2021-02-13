@@ -21,11 +21,11 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "daejong jin"
 description              : "자율주행 시스템 개발을 위한 블로그입니다."
-url                      : "https://jdj2261.github.io"
+url                      : "https://github.com/jdj2261"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/djjin.jpeg"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "/assets/images/withus.jpeg"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -99,12 +99,9 @@ author:
   location         : "Seoul"
   email            : wlseoeo@gmail.com
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "wlseoeo@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://jdj2261.github.com/"
+      url: "https://github.com/jdj2261"
 
 # Site Footer
 footer:
