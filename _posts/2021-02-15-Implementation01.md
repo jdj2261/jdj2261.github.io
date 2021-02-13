@@ -4,7 +4,6 @@ excerpt: "구현 알고리즘"
 category :
     - Algorithm
 tag :
-    - 왕실의 나이트
     - Implementation
     - Algorithm
     - Python
@@ -12,5 +11,8 @@ toc : true
 
 ---
 
+파이썬을 이용한 알고리즘 풀이 정리 - 구현 알고리즘
 
-## 왕실의 나이트
+## 구현 알고리즘
+
+피지컬로 승부하자
