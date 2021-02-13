@@ -1,16 +1,14 @@
 ---
 title : "이것이 코딩 테스트다 with 파이썬 풀이 - Implementation"
-excerpt: "구현 알고리즘"
+excerpt: "구현 알고리즘 - 왕실의 나이트"
 category :
     - Algorithm
 tag :
-    - 왕실의 나이트
     - Implementation
     - Algorithm
     - Python
 toc : true
 
 ---
-
 
 ## 왕실의 나이트
