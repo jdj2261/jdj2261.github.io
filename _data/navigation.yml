@@ -4,8 +4,8 @@ main:
     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
     url: https://jdj2261.github.io/
-  - title: "Algorithm"
-    url: /categories/Algorithm/
+  - title: "algorithm"
+    url: /categories/algorithm/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
