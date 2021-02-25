@@ -1,6 +1,6 @@
 ---
 title: "Autonomous"
-permalink: /pages/autonomous/
+permalink: /categories/autonomous/
 excerpt: "Autonomous"
 last_modified_at: 2021-02-26T21:36:18-04:00
 toc: true

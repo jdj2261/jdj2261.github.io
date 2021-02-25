@@ -1,9 +1,12 @@
 ---
 title: "Path Tracking"
-permalink: /posts/
-excerpt: "How the theme is organized and what all of the files are for."
-last_modified_at: 2018-03-20T15:19:22-04:00
+permalink: /posts/path-tracking/
+excerpt: "path tracking"
+category :
+    - path tracking
+last_modified_at: 2021-02-26T15:19:22-04:00
+toc: true
 
 ---
 
-Nothing clever here :wink:. Layouts, data files, and includes are all placed in their default locations. Stylesheets and scripts in `assets`, and a few development related files in the project's root directory.
+## Path Tracking
