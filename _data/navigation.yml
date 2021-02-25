@@ -15,8 +15,8 @@ main:
 docs:
   - title: For Autonomous Vehicle 
     children:
-      - title: "Path Tracking"
-        url: /posts/path-tracking/
+      - title: "Autonomous"
+        url: /pages/autonomous/
   #     - title: "Object Detection"
   #       url: /posts/object-detection/
   # - title: Path Tracking
