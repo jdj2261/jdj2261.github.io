@@ -1,13 +1,34 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: https://jdj2261.github.io/
-  - title: "algorithm"
+  - title: "Autonomous"
+    url: /categories/autonomous/  
+  - title: "Algorithm"
     url: /categories/algorithm/
+  - title: "ROS"
+    url: /categories/ros/
+  - title: "Linux/Ubuntu"
+    url: /categories/linux/
   - title: "Categories"
     url: /categories/
-  - title: "Tags"
-    url: /tags/
+ 
+# documentation links
+docs:
+  - title: For Autonomous Vehicle 
+    children:
+      - title: "Path Tracking"
+        url: /posts/path-tracking/
+  #     - title: "Object Detection"
+  #       url: /posts/object-detection/
+  # - title: Path Tracking
+  #   children:
+  #     - title: "Pure Pursuit Algorithm"
+  #       url: /posts/pure-pursuit/
+  #     - title: "Stanley Algorithm"
+  #       url: /posts/stanley/
+  # - title: Object Detection
+  #   children:
+  #     - title: "Lidar"
+  #       url: /posts/lidar/
+  #     - title: "Camera"
+  #       url: /posts/camera/
 
