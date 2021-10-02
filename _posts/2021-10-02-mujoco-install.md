@@ -1,6 +1,6 @@
 ---
 layout: post
-title: mujoco 설치하기
+title: [Mujoco] mujoco 설치하기
 date: 2021-10-02 01:32:23 +0900
 category: mujoco
 ---

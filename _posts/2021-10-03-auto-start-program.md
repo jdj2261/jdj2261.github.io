@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 자동시작 스크립트 작성하기
+title: [Ubuntu] 자동시작 스크립트 작성하기
 date: 2021-10-03 01:50:00 +0900
 category: ubuntu
 ---
