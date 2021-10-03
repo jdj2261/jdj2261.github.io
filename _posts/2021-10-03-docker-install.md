@@ -350,7 +350,8 @@ $ docker stop pytorch
 ### 4. docker hub 로그인
 
 ~~~
-$ docker login아이디, 패스워드 입력
+$ docker login
+아이디, 패스워드 입력
 ~~~
 
 ### 5. 배포하기
