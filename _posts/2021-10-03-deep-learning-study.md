@@ -432,7 +432,7 @@ keras는 입력층을 따로 만드는 것이 아니라, 첫번째 Dense가 은�
 
 여기서 활성화 함수는 시그모이드
 
-<img src="https://thebook.io/img/080228/131.jpg" align="left" alt="img" style="zoom: 67%;" />
+<img src="https://thebook.io/img/080228/131.jpg" alt="img" style="zoom: 67%;" />
 
 #### **모델 컴파일**
 
@@ -581,7 +581,7 @@ sns.heatmap(df.corr(),linewidths=0.1,vmax=0.5, cmap=colormap, linecolor='white',
 plt.show()
   ~~~
 
-<img src="https://thebook.io/img/080228/144.jpg" alt="img" align="left" style="zoom:67%;" />
+<img src="https://thebook.io/img/080228/144.jpg" alt="img" style="zoom:67%;" />
 
 당뇨병 발병 여부를 가리키는 class 항목과 가장 상관관계가 높은 항목은 plasma
 
@@ -880,7 +880,7 @@ print("\n Accuracy: %.4f" % (model.evaluate(X, Y)[1]))
 
   층이 너무 많거나 변수가 복잡해서 발생하기도 하고 테스트셋과 학습셋이 중복될 때 생기기도 한다.
 
-<img src="https://thebook.io/img/080228/165.jpg" alt="img" align="left" style="zoom:50%;" />
+<img src="https://thebook.io/img/080228/165.jpg" alt="img" style="zoom:50%;" />
 
 - 학습셋과 데이터셋
 
