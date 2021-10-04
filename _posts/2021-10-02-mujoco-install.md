@@ -1,7 +1,7 @@
 ---
 layout: post
 title: mujoco 설치하기
-date: 2021-10-02 11:32:23 
+date: 2021-10-02 01:32:23
 category: simulator
 ---
 # MuJoCo Package
