@@ -1,9 +1,11 @@
 ---
 layout: post
 title: NVDIA-DRIVER, CUDA, CuDnn 설치하기
-date: 2021-10-04 11:17:00 
+date: 2021-10-04 11:17:00 09:00
 category: ubuntu
 ---
+
+ubuntu 18.04 버전에 Nvidia driver, CUDA, CUDnn 설치 방법을 정리하였습니다.
 
 ## 1. NVIDIA-DRIVER Install
 
