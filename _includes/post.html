@@ -9,6 +9,14 @@
 		</time>		
 	</header>
 
+	<div style="text-align:right; text-align: center">
+		<a href="https://hits.seeyoufarm.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"
+		  target="_blank">
+		  <img
+		  src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}&count_bg=%2379C83D&title_bg=%234D4B48&icon=bilibili.svg&icon_color=%23E7E7E7&title=조회수&edge_flat=false"/>
+		</a>
+	</div>
+
 	<div class="post-content">
 		{{ content }}
 	</div>
