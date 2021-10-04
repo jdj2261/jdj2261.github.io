@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NVDIA-DRIVER, CUDA, CuDnn 설치하기
-date: 2021-10-04 11:17:00 +0900
+date: 2021-10-04 11:17:00 
 category: ubuntu
 ---
 
