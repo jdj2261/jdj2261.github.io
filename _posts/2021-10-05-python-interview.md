@@ -6,7 +6,7 @@ category: Python
 
 ---
 
-[[100 Essential Python Interview]](https://www.techbeamers.com/python-interview-questions-programmers/)를 참고하여 중요하다고 생각되는 것 위주로 정리하고자 합니다.
+[[100 Essential Python Interview]](https://www.techbeamers.com/python-interview-questions-programmers/) 를 중심으로 정리할 예정이며 중요하다고 생각되는 것 위주로 정리하고자 합니다.
 
 # Python Interview
 
@@ -233,7 +233,7 @@ for emp, age in kwargs.items():
         	processor = new_processor
     	def get_PC(self):
         	return "%s cpu & %s ram" % (self.processor, self.ram)
-
+        	
 class Tablet():
     make = "Intel"
     def __init__(self, processor, ram, make):
