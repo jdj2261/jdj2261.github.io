@@ -225,14 +225,14 @@ for emp, age in kwargs.items():
   <ul>
     <li>상속의 한 종류로 기본 클래스에서 상속을 하지만 파생 클래스의 멤버 역할을 하는 기본 클래스의 인스턴스 변수를 사용</li>
     <pre><code class="language-python" lang="python">class PC: # Base class
-processor = "Xeon" # Common attribute
-def __init__(self, processor, ram):
-    self.processor = processor
-    self.ram = ram
-    def set_processor(self, new_processor):
-        processor = new_processor
-    def get_PC(self):
-        return "%s cpu & %s ram" % (self.processor, self.ram)
+	processor = "Xeon" # Common attribute
+	def __init__(self, processor, ram):
+  		self.processor = processor
+    	self.ram = ram
+    	def set_processor(self, new_processor):
+        	processor = new_processor
+    	def get_PC(self):
+        	return "%s cpu & %s ram" % (self.processor, self.ram)
 
 class Tablet():
     make = "Intel"
