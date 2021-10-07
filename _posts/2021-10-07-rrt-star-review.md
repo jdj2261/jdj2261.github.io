@@ -7,7 +7,7 @@ use_math: true
 ---
 샘플 기반 최적 모션 플래닝 알고리즘을 정리한 논문입니다.([pdf파일](https://arxiv.org/pdf/1105.1186.pdf))
 
-# Sampling-based Algorithms for Optimal Motion Planning Review
+# Sampling-based Algorithms for Optimal Motion Planning
 
 ## 0. Abstract
 
@@ -69,34 +69,32 @@ PRM, PRM*, RRT, RRT* 알고리즘의 확률적으로 완벽한지, 최적화, �
   $$
   \left\{SampleFree_{i}(\omega)\right\}_{i\in\mathbb{N}_{0}} = \left\{Sample_{i}(\omega)\right\}_{i\in \mathbb{N}_{0}}\cap X_{free}\\\omega : sample\ point
 $$
-
-$$
 - Nearest Neighbor
-$$
 
-Nearest(G = (V, E), x) := argmin_{v∈V}\left \| x-v \right \|
-
-$$
+  $$
+  Nearest(G = (V, E), x) := argmin_{v∈V}\left \| x-v \right \|
+  $$
+  
 - Near Vertices
-$$
 
-Near(G = (V, E), x, r) := \left \{v ∈ V : v ∈ B_{x,r}\right \}
-
-$$
+  $$
+  Near(G = (V, E), x, r) := \left \{v ∈ V : v ∈ B_{x,r}\right \}
+  $$
+  
 - Steering
-$$
 
-Steer(x, y) := argmin_{z∈Bx,η}
-\left \| z-y \right \|
-
-$$
+  $$
+  Steer(x, y) := argmin_{z∈Bx,η}
+  \left \| z-y \right \|
+  $$
+  
 - collision Test
+
+  $$
+  CollisionFree(x, {x}') := [x, {x}'
+  ] ⊂ X_{free}
 $$
 
-CollisionFree(x, {x}') := [x, {x}'
-] ⊂ X_{free}
-
-$$
 ### 3-2. Existing Algorithms
 
 - Probabilistic RoadMaps (PRM)
@@ -139,26 +137,27 @@ $$
 
   <img src="/public/img/2021-10-07-paper-review3.png"/>
 
-  기존의 PRM과 차이는 3번째 줄에 들어가는 r 입니다.<br>
-$$
+  기존의 PRM과 차이는 3번째 줄에 들어가는 r 입니다.
 
-r := \gamma_{PRM}(log(n)/n)^{1/d}
-
-$$
-br>위 식의 의미를 설명하자면, n은 노드 수이고, d는 차원 수입니다.<br>
-이웃 반경 r 노드 수가 많아지면 작아지고 log(n)에 비례한다는 것입니다.<br>
-
-따라서 노드 수가 많아지면 조밀한 그래프 형태의 로드맵이 됩니다. <br>좀 더 조밀한 경로가 생성되기 때문에 PRM보다 유연한 경로(직선 경로)가 만들어 집니다.
-
+  
+  $$
+  r := \gamma_{PRM}(log(n)/n)^{1/d}
+  $$
+  
+  
+  위 식의 의미를 설명하자면, n은 노드 수이고, d는 차원 수입니다.<br>
+  이웃 반경 r 노드 수가 많아지면 작아지고 log(n)에 비례한다는 것입니다.<br>
+  
+  따라서 노드 수가 많아지면 조밀한 그래프 형태의 로드맵이 됩니다. <br>좀 더 조밀한 경로가 생성되기 때문에 PRM보다 유연한 경로(직선 경로)가 만들어 집니다.
+  
 - Optimal RRT (RRT*)
 
-<img src="/public/img/2021-10-07-paper-review4.png"/>
+  <img src="/public/img/2021-10-07-paper-review4.png"/>
 
-기존의 RRT와의 다른 점은 Cost를 계산한다는 것과 PRM*에서 사용하는 r(이웃 반경)을 사용합니다.
+  기존의 RRT와의 다른 점은 Cost를 계산한다는 것과 PRM*에서 사용하는 r(이웃 반경)을 사용합니다.
+  
+  x_rand에서 이웃 반경을 그려 이웃 반경 안에 노드(x_near)가 있으면 x_rand와 x_near를 이어주고 cost를 계산합니다.
 
-x_rand에서 이웃 반경을 그려 이웃 반경 안에 노드(x_near)가 있으면 x_rand와 x_near를 이어주고 cost를 계산합니다.
-
-cost를 최소화 하기 위한 노드를 선택하는 것이기 때문에 기존의 트리를 재구성하는 Rewire 단계를 거치게 됩니다.
-
-따라서 샘플링을 많이 할 수록 RRT보다 유연한 경로가 만들어지며 최적의 경로를 보장하게 됩니다.
-$$
+  cost를 최소화 하기 위한 노드를 선택하는 것이기 때문에 기존의 트리를 재구성하는 Rewire 단계를 거치게 됩니다.
+  
+  따라서 샘플링을 많이 할 수록 RRT보다 유연한 경로가 만들어지며 최적의 경로를 보장하게 됩니다.
