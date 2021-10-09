@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Robosuite 설치하기
-date: 2021-10-09 23:10:00 +09:00
+title: Robosuite 데모 실행하기
+date: 2021-10-09 23:33:00 +09:00
 category: simulator
 ---
 robosuite [ 공식 홈페이지](https://robosuite.ai/docs/overview.html)와 [github](https://github.com/openai/mujoco-py)를 참조하여 진행하였습니다.
