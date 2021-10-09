@@ -68,32 +68,34 @@ PRM, PRM*, RRT, RRT* 알고리즘의 확률적으로 완벽한지, 최적화, �
 
   $$
   \left\{SampleFree_{i}(\omega)\right\}_{i\in\mathbb{N}_{0}} = \left\{Sample_{i}(\omega)\right\}_{i\in \mathbb{N}_{0}}\cap X_{free}\\\omega : sample\ point
-$$
+  $$
 - Nearest Neighbor
 
-  $$
-  Nearest(G = (V, E), x) := argmin_{v∈V}\left \| x-v \right \|
-  $$
-  
+$$
+Nearest(G = (V, E), x) := argmin_{v∈V}\left \| x-v \right \|
+$$
+
 - Near Vertices
 
-  $$
-  Near(G = (V, E), x, r) := \left \{v ∈ V : v ∈ B_{x,r}\right \}
-  $$
-  
+$$
+Near(G = (V, E), x, r) := \left \{v ∈ V : v ∈ B_{x,r}\right \}
+$$
+
 - Steering
 
-  $$
-  Steer(x, y) := argmin_{z∈Bx,η}
+$$
+Steer(x, y) := argmin_{z∈Bx,η}
   \left \| z-y \right \|
-  $$
-  
+$$
+
 - collision Test
 
-  $$
-  CollisionFree(x, {x}') := [x, {x}'
+$$
+CollisionFree(x, {x}') := [x, {x}'
   ] ⊂ X_{free}
 $$
+
+
 
 ### 3-2. Existing Algorithms
 
@@ -137,19 +139,14 @@ $$
 
   <img src="/public/img/2021-10-07-paper-review3.png"/>
 
-  기존의 PRM과 차이는 3번째 줄에 들어가는 r 입니다.
-
-  
+  기존의 PRM과 차이는 3번째 줄에 들어가는 r 입니다.<br>
   $$
   r := \gamma_{PRM}(log(n)/n)^{1/d}
   $$
   
   
-  위 식의 의미를 설명하자면, n은 노드 수이고, d는 차원 수입니다.<br>
-  이웃 반경 r 노드 수가 많아지면 작아지고 log(n)에 비례한다는 것입니다.<br>
-  
-  따라서 노드 수가 많아지면 조밀한 그래프 형태의 로드맵이 됩니다. <br>좀 더 조밀한 경로가 생성되기 때문에 PRM보다 유연한 경로(직선 경로)가 만들어 집니다.
-  
+  위 식의 의미를 설명하자면, n은 노드 수이고, d는 차원 수입니다.<br>이웃 반경 r 노드 수가 많아지면 작아지고 log(n)에 비례한다는 것입니다.<br>따라서 노드 수가 많아지면 조밀한 그래프 형태의 로드맵이 됩니다. <br>좀 더 조밀한 경로가 생성되기 때문에 PRM보다 유연한 경로(직선 경로)가 만들어 집니다.
+
 - Optimal RRT (RRT*)
 
   <img src="/public/img/2021-10-07-paper-review4.png"/>
