@@ -59,4 +59,4 @@ $ conda activate mujoco-py3.7
 
 - Demo result
 
-  <img src="/public/img/2021-10-09-img.png/">
+  ![img](/public/img/2021-10-09-img.png)
