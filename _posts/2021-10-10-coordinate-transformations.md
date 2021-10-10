@@ -39,7 +39,7 @@ $$
 
 - 로봇 왼팔이 x축을 중심으로 파이만큼 회전을 할 때 월드 좌표계에서 어떻게 표현을 할 것인지 설명하려고 한다.
 
-  - Rotation Matrix의 정의와, local coordinatea 상의 position, attitude를 표현하는 방법에 대해서 알아야 한다.
+  - Rotation Matrix의 정의와, local coordinate 상의 position, attitude를 표현하는 방법에 대해서 알아야 한다.
 
     - a frame의 x축, y축, z축으로 향하는 방향 벡터를 모아 Rotation Matrix로 표현한다.
 
