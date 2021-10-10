@@ -32,15 +32,17 @@ use_math: true
 
 <img src="/public/img/2021-10-10-transform1.png" height="400"/><br>
 
-<img src="/public/img/2021-10-10-transform2.png" height="40"/>.  <img src="/public/img/2021-10-10-transform3.png" height="60"/>
-
-
+<img src="/public/img/2021-10-10-transform2.png" height="40"/>.  <img src="/public/img/2021-10-10-transform3.png" height="60"/><br>
 $$
-\begin{align*}
-&P_h : the\ hand\ tip\ position\\
-&P_a : the\ absolute\ position\ of\ the\ left\ shoulder\\ 
-&r: the\ position\ of\ the\ hand\  end\ relative\ to\ the\ shoulder 
-\end{align*}
+P_h : the\ hand\ tip\ position
+$$
+<br>
+$$
+P_a : the\ absolute\ position\ of\ the\ left\ shoulder
+$$
+<br>
+$$
+r : the\ position\ of\ the\ hand\ end\ relative\ to\ the\ shoulder
 $$
 
 - 로봇 왼팔이 x축을 중심으로 파이만큼 회전을 할 때 월드 좌표계에서 어떻게 표현을 할 것인지 설명하려고 한다.
