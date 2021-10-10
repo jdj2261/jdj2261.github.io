@@ -43,11 +43,11 @@ A* 알고리즘은 오직 그리드 환경에서 사용되며 고차원일 수�
 
 ### 1-3. Statement of Contributions
 
-PRM, PRM*, RRT, RRT* 알고리즘의 확률적으로 완벽한지, 최적화, 계산적으로 효율성을 아래의 표로 보여줍니다.
+PRM, PRM-star, RRT, RRT-star 알고리즘의 확률적으로 완벽한지, 최적화, 계산적으로 효율성을 아래의 표로 보여줍니다.
 
 <img src="/public/img/2021-10-07-paper-review.png"/>
 
-그래프에서 보듯이 RRT* 알고리즘이 가장 효율****적이며 언제든지 모션 플래닝이 가능하다고 합니다.
+그래프에서 보듯이 RRT* 알고리즘이 가장 효율적이며 언제든지 모션 플래닝이 가능하다고 합니다.
 
 ### 1-4. Paper Organization
 
@@ -60,7 +60,7 @@ PRM, PRM*, RRT, RRT* 알고리즘의 확률적으로 완벽한지, 최적화, �
 
 ## 3. Algorithms
 
-먼저 PRM과 RRT 알고리즘을 소개하고 PRM*, RRT* 알고리즘을 소개합니다.
+먼저 PRM과 RRT 알고리즘을 소개하고 PRM-star, RRT-star 알고리즘을 소개합니다.
 
 ### 3-1. Primitive Procedures
 
