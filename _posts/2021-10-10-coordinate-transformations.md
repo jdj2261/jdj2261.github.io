@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Robotics] Kinematics - Coordinate Transformations
+title: Kinematics - Coordinate Transformations
 date: 2021-10-10 14:28:00 +09:00
 category: robotics
 use_math: true
