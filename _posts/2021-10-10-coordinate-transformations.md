@@ -41,7 +41,7 @@ $$
 
   - Rotation Matrix의 정의와, local coordinate 상의 position, attitude를 표현하는 방법에 대해서 알아야 한다.
 
-    - a frame의 x축, y축, z축으로 향하는 방향 벡터를 모아 Rotation Matrix로 표현한다.
+    - a frame의 x축, y축, z축으로 향하는 방향 벡터를 모아 Rotation Matrix로 표현할 수 있다.
 
       <img src="/public/img/2021-10-10-transform4.png" height="40"/>
 
@@ -54,7 +54,7 @@ $$
 
       <img src="/public/img/2021-10-10-transform6.png" height="60"/>
 
-  - 위의 내용을 토대로 월드 좌표계에서 hand의 위치는 아래처럼 표현된다
+  - 위의 내용을 토대로 월드 좌표계에서 hand의 위치는 아래처럼 표현된다.
 
     <img src="/public/img/2021-10-10-transform7.png" height="60"/>
 
@@ -71,7 +71,8 @@ $$
 
       <img src="/public/img/2021-10-10-transform10.png" height="60"/>
 
-- **Homogeneous Transformation**을 통해 World Coordinates에서 물체의 position과 attitude를 표현할 수 있다.
+  따라서, **Homogeneous Transformation**을 통해 World Coordinates에서 물체의 position과 attitude를 표현할 수 있다.
+
 
 ### 2.1.3 Local Coordinate Systems Local to Local Coordinate Systems
 
@@ -99,9 +100,9 @@ $$
 
 - 마찬가지로 Homogeneous transformation를 이용하여 표현할 수 있다.
 
-  <img src="/public/img/2021-10-10-transform15.png" height="60"/>
-
   - aP_b는 frame a에서 바라본 b의 position이며 y축에 대해 평행이동 시킨 거리이다.
+
+    <img src="/public/img/2021-10-10-transform15.png" height="60"/>
 
 - 지금까지 말한 것을 종합하면 월드 좌표계에서 hand의 position은 
   아래와 같이 표현할 수 있다.
