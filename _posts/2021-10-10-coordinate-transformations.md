@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Kinematics-Coordinate Transformations
+title: [Robotics] Kinematics - Coordinate Transformations
 date: 2021-10-10 14:28:00 +09:00
 category: robotics
 use_math: true
 ---
 [Introduction to Humanoid Robotics ](https://link.springer.com/book/10.1007/978-3-642-54536-8)를 공부하면서 정리하려고 합니다.
+
 일주일에 한 번 업데이트 예정입니다.
 
 # Chapter 2. Kinematics
