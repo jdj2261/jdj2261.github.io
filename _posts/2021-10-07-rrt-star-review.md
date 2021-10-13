@@ -4,7 +4,9 @@ title: Sampling-based Algorithms for Optimal Motion Planning 정리
 date: 2021-10-07 16:52:00 +09:00
 category: review
 use_math: true
+
 ---
+
 샘플 기반 최적 모션 플래닝 알고리즘을 정리한 논문입니다.([pdf파일](https://arxiv.org/pdf/1105.1186.pdf))
 
 # Sampling-based Algorithms for Optimal Motion Planning
@@ -64,36 +66,37 @@ PRM, PRM-star, RRT, RRT-star 알고리즘의 확률적으로 완벽한지, 최�
 
 ### 3-1. Primitive Procedures
 
-- Sampling
-
+- Sampling<br>
   $$
   \left\{SampleFree_{i}(\omega)\right\}_{i\in\mathbb{N}_{0}} = \left\{Sample_{i}(\omega)\right\}_{i\in \mathbb{N}_{0}}\cap X_{free}\\\omega : sample\ point
-$$
-- Nearest Neighbor
-
-$$
-Nearest(G = (V, E), x) := argmin_{v∈V}\left \| x-v \right \|
-$$
-
-- Near Vertices
-
-$$
-Near(G = (V, E), x, r) := \left \{v ∈ V : v ∈ B_{x,r}\right \}
-$$
-
-- Steering
-
-$$
-Steer(x, y) := argmin_{z∈Bx,η}
-  \left \| z-y \right \|
-$$
-
-- collision Test
-
-$$
-CollisionFree(x, {x}') := [x, {x}'
-  ] ⊂ X_{free}
-$$
+  $$
+  <br>
+  
+- Nearest Neighbor<br>
+  $$
+  Nearest(G = (V, E), x) := argmin_{v∈V}\left \| x-v \right \|
+  $$
+  <br>
+  
+- Near Vertices<br>
+  $$
+  Near(G = (V, E), x, r) := \left \{v ∈ V : v ∈ B_{x,r}\right \}
+  $$
+  <br>
+  
+- Steering<br>
+  $$
+  Steer(x, y) := argmin_{z∈Bx,η}
+    \left \| z-y \right \|
+  $$
+  <br>
+  
+- Collision Test<br>
+  $$
+  CollisionFree(x, {x}') := [x, {x}'
+    ] ⊂ X_{free}
+  $$
+  <br>
 
 ### 3-2. Existing Algorithms
 
@@ -113,6 +116,7 @@ $$
   6. U에 저장되어있는 노드(u)를 하나씩 꺼내 u와 x_rand 사이의 거리를 오름차순으로 정렬하고
   7. x_rand와 u가 연결되어 있지 않다면  : (V, E)를 통해 연결 여부 확인
   8. 장애물간의 충돌이 있는지 검사 후 E를 업데이트 합니다.
+
 - Rapidly-exploring Random Trees (RRT)
 
   <img src="/public/img/2021-10-07-paper-review2.png"/>
@@ -131,17 +135,17 @@ $$
   6. x_new와 x_neareset 사이에 obstacleFree 인지 확인 하고,
   7. obstacleFree이면 V와 E를 업데이트 합니다.
   8. 반복문이 끝나면 Graph를 리턴합니다.
+
 - Optimal Probabilistic RoadMaps(PRM*)
 
   <img src="/public/img/2021-10-07-paper-review3.png"/>
 
   기존의 PRM과 차이는 3번째 줄에 들어가는 r 입니다.<br>
-
   $$
   r := \gamma_{PRM}(log(n)/n)^{1/d}
-$$
-  
-위 식의 의미를 설명하자면, n은 노드 수이고, d는 차원 수입니다.<br>이웃 반경 r 노드 수가 많아지면 작아지고 log(n)에 비례한다는 것입니다.<br>따라서 노드 수가 많아지면 조밀한 그래프 형태의 로드맵이 됩니다. <br>좀 더 조밀한 경로가 생성되기 때문에 PRM보다 유연한 경로(직선 경로)가 만들어 집니다.
+  $$
+  <br>위 식의 의미를 설명하자면, n은 노드 수이고, d는 차원 수입니다.<br>이웃 반경 r 노드 수가 많아지면 작아지고 log(n)에 비례한다는 것입니다.<br>따라서 노드 수가 많아지면 조밀한 그래프 형태의 로드맵이 됩니다. <br>좀 더 조밀한 경로가 생성되기 때문에 PRM보다 유연한 경로(직선 경로)가 만들어 집니다.
+
 - Optimal RRT (RRT*)
 
   <img src="/public/img/2021-10-07-paper-review4.png"/>
