@@ -9,6 +9,8 @@ mathjax: true
 
 "바닥부터 배우는 강화학습"([저자 Github](https://github.com/seungeunrho/RLfrombasics)) 책을 읽으면서 정리하고자 합니다.
 
+
+
 # 바닥부터 배우는 강화학습
 
 ## Chapter 9. 정책 기반 에이전트
